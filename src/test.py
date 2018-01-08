@@ -1,6 +1,12 @@
 
-import sys
+import sys, os
 
 for x in sys.path:
   print(x)
+  
+def print_path():
+  "function to print path"
+  print(os.environ['PATH'])
+  
+print_path()
   
